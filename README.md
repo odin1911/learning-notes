@@ -17,11 +17,11 @@ redux,rtk,react-redux,immer
 - [x] rtk docs
 - [ ] rtk source code
 - [ ] react-redux
-- [ ] immer
+- [ ] immer 50%
 
 ### docusaurus
 
-- [ ] docs
+- [x] docs
 
 ### react animations
 

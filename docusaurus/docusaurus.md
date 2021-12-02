@@ -1,5 +1,7 @@
 # docusaurus
 
+date: 2021-12-01
+
 [Home](https://docusaurus.io/)
 
 文档创建工作，facebook 出品。
