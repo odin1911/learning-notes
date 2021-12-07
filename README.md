@@ -26,8 +26,6 @@ redux,rtk,react-redux,immer
 ### react animations
 
 - [ ] react-spring
-- [ ] react-motion
-- [ ] framer-motion
 
 ### cli
 
