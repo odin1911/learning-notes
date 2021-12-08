@@ -102,4 +102,62 @@ timeSteps 和 timeFrame 没有详细说明
 
 #### useTransition
 
-一个变化组，需要传入你自己的 items 和 lifecycles
+> An animated TransitionGroup. Feed it your items and lifecycles. Whenever items are added or removed, it will animate these changes.
+
+一个变化组，需要传入你自己的 items（一般是个数据 Array） 和 lifecycles（enter/leave）
+
+通过 useTransition 来定义一组 animated-values ，enter/leave 里的属性值不要理解成样式（在例子中的起名容易误解）
+
+通过 useTransition 返回的 transitions 方法接收一个 callback，这个 callback 接收 4 个参数
+
+第一个参数是当前 lifecycles 下定义的值
+
+第二个参数是调用 useTransition 传入的 items 项（如果 items 不是 Array，则是 items 本身）
+
+callback 返回一个 animated.div 之类的 Element
+
+### Render Props
+
+#### Parallax
+
+滚动区，目前不会用到，没看
+
+#### Spring
+
+与 useSpring 一样，当组件用
+
+#### SpringContext
+
+Context，只对`useSpring`和`<Spring>`有影响，支持：
+
+- cancel?: boolean
+- config?: SpringConfig (see configs for more information)
+- immediate?: boolean
+- pause?: boolean
+
+#### Trail
+
+同 useTrail
+
+#### Transition
+
+同 useTransition
+
+### Additional Classes
+
+#### Controller
+
+The Controller is react-spring's heart.
+
+提供对动画的完全控制
+
+#### SpringValue
+
+Create an animated value.
+
+The animatable types are:
+
+- number
+- string
+- named colors
+- and arrays of the preceding types
