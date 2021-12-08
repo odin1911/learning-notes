@@ -161,3 +161,9 @@ The animatable types are:
 - string
 - named colors
 - and arrays of the preceding types
+
+## 2021-12-08
+
+动画不是基于时间的，和传统动画库不一样，config 有提供 duration 项，没尝试
+
+更新是脱离开 react 更新机制的，这个可以深入了解一下，是基于 requestAnimationFrame 的？
