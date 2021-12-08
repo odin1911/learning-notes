@@ -167,3 +167,15 @@ The animatable types are:
 动画不是基于时间的，和传统动画库不一样，config 有提供 duration 项，没尝试
 
 更新是脱离开 react 更新机制的，这个可以深入了解一下，是基于 requestAnimationFrame 的？
+
+> 对 React-Spring 的一些思考
+>
+> animated 的一个优点是，它可以直接应用动画，而不需要依赖 React 一帧一帧地渲染更新，就像其他 React 动画库一样。因此，React-spring 受益于动画巧妙的渲染模型。
+>
+> 在简单的情况下，差异可能不明显，但是如果尝试嵌套图表，React 将会占用 CPU 资源，阻塞浏览器的帧预算。
+>
+> 在 React 之外应用更新有严格的限制，因为一般的 React 组件在 DOM 中没有表示，所以只能动画化 DOM 原生样式和属性，但在这里，你可以通过提供 native 标志在这两种模型中进行选择。
+>
+> 动画也可以处理完全本地的驱动程序，所以在未来，如果 web 动画获得更多的支持，它甚至可以在合成线程中完成所有的动画。但现在，react-spring 可以与 gsap 和 d3 相比，后者也可以在 requestAnimationFrame 循环中进行动画。
+
+考虑再看下 react-motion 库
