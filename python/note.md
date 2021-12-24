@@ -6,7 +6,7 @@
 
 [vscode 配置 Python 开发环境](https://www.mzh.ren/vscode-python-env-setup.html)
 
-[python viz](https://pythonviz.com/category/basic/)
+[python viz](https://pythonviz.com/category/basic/)，一个教程网站，东西很基础也不多
 
 ## 安装 python 途径
 
@@ -26,17 +26,6 @@ pyenv：从网上评论看，是推荐使用的
 [pip/pyenv 国内镜像加速源](https://zhuanlan.zhihu.com/p/408705543)
 
 ## python versions
-
-[2021 年了，該如何配置 Python 開發環境 - Part 1 Python 版本管理](https://mcko.me/python-runtime-management.html)，介绍了 pyenv,asdf,conda
-
-[Python 杂记之 如何使用 pyenv 管理 python 版本管理与如何使用 virtualenv 创建 python 虚拟运行环境](https://zicowarn.github.io/2020/09/22/0809-python-hwoto-install-pyevn-virtualenv/)，安装和配置 pyenv 和 pyenv-virtualenv 整个过程
-
-注意：有点地方笔误把 pyenv 写成了 python
-
-> virtualenvwrapper 是对 virtualenv 命令的扩展。
-> pyenv-virtualenv 是 pyenv 的插件，主要用于确保 pyenv 和 virtualenv 能够同时使用。
-> 如果使用的是 python3.3 以上的版本，则默认 python 自带 venv，pyenv-virtualenv 插件就是可选内容。
-> pyenv-virtualenvwrapper 也是 pyenv 的插件，主要是为了是 pyenv 中能集成 virtualenvwrapper。
 
 [Pipenv 虛擬環境](https://iter01.com/604178.html)，venv 暂时可能还用不上，pipenv 有不少负面评价，慎用
 
