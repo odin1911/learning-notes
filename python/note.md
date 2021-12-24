@@ -54,3 +54,9 @@ pyenv：从网上评论看，是推荐使用的
 > 如果写包的话，poetry 是首荐的包管理器。有很多有趣的功能，比如通过插件能将 git tag 自动转换成包版本号发布。
 > pytest 可以让单元测试更轻松；tox 可以让你多版本 python 同时测试；
 > 选个 CI 自动化测试、部署很关键，没 CI 寿命就少了一半。不想用托管的也可以用自托管的，比如 nektos/act。
+
+[Python 生态发展之路](https://zhuanlan.zhihu.com/p/398406235)，生态
+
+[Python 计算生态中有哪些领域？](https://zhuanlan.zhihu.com/p/369869926)，生态
+
+[Python 学习路线与生态](https://cloud.tencent.com/developer/article/1835442)，生态
