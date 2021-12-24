@@ -8,7 +8,7 @@
 
 [python viz](https://pythonviz.com/category/basic/)
 
-## 安装
+## 安装 python 途径
 
 - Linux 上的内置 Python 安装。
 - MacOS 上使用 brew 安装。brew install python3
@@ -17,7 +17,13 @@
 
 ## python version management
 
-pyenv
+pyenv：从网上评论看，是推荐使用的
+
+## refs
+
+[Pyenv 的安装配置与国内镜像加速](https://www.mywaiting.com/weblogs/pyenv-install-for-virtualenv-and-accelerate-in-mainland-china/)，内有 pip 安装国内加速
+
+[pip/pyenv 国内镜像加速源](https://zhuanlan.zhihu.com/p/408705543)
 
 ## python versions
 
