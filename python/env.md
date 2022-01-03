@@ -16,13 +16,13 @@
 
 Pyenv 主要是用于 Python 版本隔离
 
-参考官方文档，以 brew 方式安装
+参考官方文档，以 brew 方式安装， [github](https://github.com/pyenv/pyenv)
 
 ## 安装 pyenv-virtualenv
 
 虚拟环境
 
-参考官方文档，以 brew 方式安装
+参考官方文档，以 brew 方式安装， [github](https://github.com/pyenv/pyenv-virtualenv)
 
 使用 pyenv virtualenv，不要用 pyenv-virtualenv，brew 安装的缺少 pyenv-root 环境变量
 
@@ -44,7 +44,7 @@ pip-tools、Pipenv、Poetry、conda-lock
 
 ## 2021-12-29
 
-目前网上的信息来看，python 环境说法不统一，自己大概总结一下
+目前网上的信息来看，python 环境说法不统一，大概总结一下
 
 pyenv 用于管理 python 版本，意见比较一致
 
