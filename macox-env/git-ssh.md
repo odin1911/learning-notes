@@ -7,6 +7,8 @@
 ```shell
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com" # 创建
 
+pbcopy < ~/.ssh/id_ed25519.pub # 复制
+
 ssh-add -K ~/.ssh/id_ed25519 # 加入 ssh-agent
 
 ssh-add -l # 查看
