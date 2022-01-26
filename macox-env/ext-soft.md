@@ -7,3 +7,7 @@
 ## flux
 
 屏幕调色，去网页下载
+
+## snipaste
+
+[snipaste](https://www.snipaste.com/)
