@@ -11,3 +11,7 @@
 ## snipaste
 
 [snipaste](https://www.snipaste.com/)
+
+## shottr
+
+[snipaste](https://shottr.cc/?ref=appinn.com)
