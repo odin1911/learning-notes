@@ -37,12 +37,12 @@ docker restart nostalgic_maxwell
 
 # 删除容器
 docker rm nostalgic_maxwell
+docker rm -f nostalgic_maxwell # force 停止并删除容器
+
+# 查看日志
+docker logs <container-id>
 ```
 
 nodemon 开发工具，代替 node，简单用了一下，结合 node 再看一下参数
-
-docker-compose 配置 docker，要看下详细文档
-
-docker volumn 看一下怎么处理 db.json 的问题
 
 ~~mongo 要看一下~~基本知识了解了，node 使用，结合 fastify 看
