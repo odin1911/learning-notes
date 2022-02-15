@@ -1,6 +1,6 @@
 # 从DNA到蛋白质
 
-[从DNA到蛋白质中文版](https://www.bilibili.com/medialist/play/436501679?from=space&business=space&sort_field=pubtime&spm_id_from=333.999.0.0)
+[从DNA到蛋白质中文版](https://www.bilibili.com/video/BV12f4y1q7iE?spm_id_from=333.999.0.0)
 
 Cell `细胞`，是活体组织的基本构成单位
 
@@ -34,7 +34,7 @@ mRNA被用途制造蛋白质的模板前，要加工，去除与增加部分RNA�
 
 蛋白质是生命的物质基础，是生命活动的主要承担者
 
-红细胞、胶原蛋白、胰岛素、抗体
+红细胞、酶、胶原蛋白、胰岛素、抗体、钙泵
 
 这里就说到蛋白质的4级结构了，之前看过的
 
