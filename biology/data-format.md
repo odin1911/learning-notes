@@ -28,7 +28,7 @@ mapping是什么[深度测序数据分析 Step1（Reads mapping）](http://www.b
 
 > 介绍三种文件格式：1.fasta。2.fastq。3.sam
 
-## GTF GFF
+## GTF/GFF
 
 GTF全称是Gene transfer format，用于储存基因结构信息，共9列表格。（怎么打开？）
 
