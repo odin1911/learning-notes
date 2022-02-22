@@ -395,3 +395,17 @@ __FILE__: 当前源文件的名称。
 __LINE__: 当前行在源文件中的编号。
 
 defined?
+
+## Pre-defined Variables
+
+如：`$,`
+
+[Ruby : Pre-defined Variables](https://www.w3resource.com/ruby/ruby-variables-constants.php)
+
+[Globalization](https://idiosyncratic-ruby.com/9-globalization.html)
+
+[中文](https://cloud.tencent.com/developer/section/1377807)
+
+## 2022-02-22
+
+ruby语法暂结，rails还没看
