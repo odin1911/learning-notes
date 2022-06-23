@@ -14,6 +14,10 @@ npm install -g git-cz
 git cz [-a] [--amend] [...]
 ```
 
+[配置文件](https://github.com/streamich/git-cz/blob/1da51c529277d468020dff58130ccad766696ebe/lib/getConfig.js#L7)
+
+[package.json配置](https://github.com/streamich/git-cz/blob/1da51c529277d468020dff58130ccad766696ebe/lib/getConfig.js#L31)
+
 ## commitlint 验证是否符合规范
 
 ```shell
