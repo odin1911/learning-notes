@@ -18,13 +18,13 @@ A：app store 里找到 xcode，在历史版本中找到可以安装的版本
 
 ### 安装 Homebrew
 
-使用脚本直接安装失败，改用镜像安装
+[brew.md](brew.md)
 
-[科大镜像](https://mirrors.ustc.edu.cn/help/brew.git.html)，里面有安装步骤，现在不用改脚本了，可以使用环境变量
-
-[清华镜像](https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/)
+使用镜像安装，现在不用改脚本了，可以使用环境变量
 
 ## iterm
+
+[iTerm.md](iTerm.md)
 
 [配置](https://sspai.com/post/63241)，配置就按这个文档内的选择，还不错，文章有点旧了，界面不一样了
 
