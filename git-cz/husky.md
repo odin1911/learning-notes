@@ -1,5 +1,7 @@
 # husky learn note
 
+5.0后差异很大
+
 ## refs
 
 [homepage][]
