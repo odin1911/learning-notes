@@ -1,4 +1,4 @@
-# react-router
+# react-router 6
 
 一共有三个包：react-router、react-router-dom和react-router-native
 
@@ -18,7 +18,7 @@ Route 不能够被渲染，只会被Routes接受并解析
 
 [布局路由](https://reactrouter.com/docs/en/v6/getting-started/concepts#layout-routes)
 
-> 布局路由在 useRoutes 里能用吗？应该可以，因为 Routes 里把 Route 转换成 RouteObject
+> 布局路由在 useRoutes 里能用吗？应该可以，因为 Route 经 Routes 转换成 useRoutes 的配置参数
 
 ## Routes
 
@@ -31,6 +31,38 @@ RouteContext，它存储了两个属性：outlet与matches
 useRoutes是整个react-router v6的核心所在，内部包含了大量的解析与匹配逻辑。
 
 整个流程对应三个阶段：路由上下文解析阶段，路由匹配阶段，路由渲染阶段。
+
+细节再看
+
+## Outlet
+
+Outlet 中可以传入上下文信息，在子路由中使用 useOutletContext 获取。
+
+```javascript
+import { Outlet, useOutlet, useOutletContext } from 'react-router';
+
+function Parent() {
+  const [count, setCount] = React.useState(0);
+  // 下面两种方式等同
+  // const outlet = useOutlet([count, setCount])
+  return <Outlet context={[count, setCount]} />;
+}
+
+// 在子路由中获取传入的上下文信息
+function Child() {
+  const [count, setCount] = useOutletContext();
+  const increment = () => setCount(c => c + 1);
+  return <button onClick={increment}>{count}</button>;
+}
+```
+
+内部实际就是渲染RouteContext中的outlet属性。
+
+## Navigate
+
+内部使用 history 的 navigator 跳转
+
+可以使用相对路径
 
 ## refs
 
