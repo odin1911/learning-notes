@@ -1,4 +1,6 @@
-# office add-ins
+# office add-ins 开发记录
+
+office add-ins 是微软的一个office插件运行环境，可以用react开发
 
 以 excel 为例
 
