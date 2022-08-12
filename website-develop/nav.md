@@ -2,13 +2,17 @@
 
 在开发官网过程中接触了一些导行需要，做一些记录
 
-## gumshoe
+## 滚动监控
+
+根据页面滚动位置，更新导行元素
+
+### gumshoe
 
 <https://github.com/cferdinandi/gumshoe/blob/master/src/js/gumshoe/gumshoe.js>
 
 gumshoe是一个滚动监控库
 
-只能适用于原始的锚点跳转场景，在页面滚动时可以触发导行元素样式变化
+只能适用于原始的锚点跳转场景，
 
 样式是加到`li`元素上的
 
@@ -30,9 +34,15 @@ var isInView = function (elem, settings, bottom) {
 };
 ```
 
-## reactrouter
+### 其他
 
-使用reactrouter，模拟锚点滚动效果。使用v6版本
+有个IntersectionObserver方案，不考虑兼容可以看一下
+
+<https://www.zhangxinxu.com/wordpress/2020/12/js-intersectionobserver-nav/>
+
+## 使用reactrouter模拟锚点
+
+使用v6版本
 
 使用NavLink显示样式，根据pathname分析滚动位置，利用scrollIntoView实现滚动
 
@@ -76,18 +86,40 @@ export function Router() {
 ```
 
 ```js
-// operate pathname
-const { pathname } = useLocation();
+// hook
+export function useScrollToAnchor() {
+  const { pathname } = useLocation();
+  const $isFirstScroll = useRef<boolean>(true);
 
-useEffect(() => {
-  const id = pathname.split('/')[2];
-  if (id) {
-    const ele = document.getElementById(id);
-    if (ele) {
-      ele.scrollIntoView({ behavior: 'smooth' });
+  useEffect(() => {
+    const smooth = !$isFirstScroll.current;
+    const id = pathname.split('/')[2];
+    if (id) {
+      // pathname中的子路径视作锚点
+      const ele = document.getElementById(id);
+      if (ele) {
+        const top = (ele as HTMLElement).offsetTop - 100;
+        scrollTo(top, smooth);
+      }
+    } else {
+      scrollToTop(smooth);
     }
+    $isFirstScroll.current = false;
+  }, [pathname]);
+}
+
+export function scrollTo(pos: number, smooth: boolean = false) {
+  if (smooth) {
+    window.scrollTo({
+      top: pos,
+      behavior: 'smooth',
+    });
   } else {
-    scrollToTop(true);
+    document.documentElement.scrollTop = pos;
   }
-}, [pathname]);
+}
+
+export function scrollToTop(smooth: boolean = false) {
+  scrollTo(0, smooth);
+}
 ```
