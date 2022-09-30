@@ -10,6 +10,10 @@ issue 里看到，对于 monorepos 推荐 [changesets](https://github.com/change
 
 [issue](https://github.com/release-it/release-it/issues/831)
 
+## 关于配置
+
+github上没找到配置项文档，其它途径找一下，2022-09-06
+
 ## refs
 
 <https://juejin.cn/post/7114673069293043719>
