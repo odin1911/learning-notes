@@ -15,6 +15,8 @@ npm link 替代方案
 npm i yalc -g
 ```
 
+在库项目中
+
 ```
 <!-- cd package -->
 yalc publish
@@ -25,6 +27,8 @@ yalc publish --no-scripts
 yalc publish --push 
 yalc push
 ```
+
+在目标项目中
 
 ```
 <!-- at project -->
@@ -45,3 +49,7 @@ yalc remove --all
 yalc installations show
 yalc installations clean [my-package]
 ```
+
+## 2023-02-14
+
+在bio-iframe使用时，发生query-string找不到的问题，后续关注一下目前的可用性
