@@ -23,7 +23,7 @@ const csv = parser.parse(data)
 console.log('csv', csv);
 
 // '\uFEFF'是给csv加BOM
-let blob = new Blob(['\uFEFF' + csv], {
+const blob = new Blob(['\uFEFF' + csv], {
   type: 'text/plaincharset=utf-8'
 })
 FileSaver.saveAs(blob, fileName)
