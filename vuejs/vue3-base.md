@@ -500,7 +500,7 @@ const myObject = reactive({
 </ul>
 ```
 
-在外新包装一层 <template> 再在其上使用 v-for
+在外新包装一层 `<template>` 再在其上使用 v-for
 
 ```
 <template v-for="todo in todos">
@@ -1109,8 +1109,34 @@ emit('enlarge-text')
 `<component>` 元素
 
 ```
-<!-- currentTab 改变时组件也改变 -->
-<component :is="tabs[currentTab]"></component>
+<script setup>
+import Home from './Home.vue'
+import Posts from './Posts.vue'
+import Archive from './Archive.vue'
+import { ref } from 'vue'
+ 
+const currentTab = ref('Home')
+
+const tabs = {
+  Home,
+  Posts,
+  Archive
+}
+</script>
+
+<template>
+  <div class="demo">
+    <button
+       v-for="(_, tab) in tabs"
+       :key="tab"
+       :class="['tab-button', { active: currentTab === tab }]"
+       @click="currentTab = tab"
+     >
+      {{ tab }}
+    </button>
+	  <component :is="tabs[currentTab]" class="tab"></component>
+  </div>
+</template>
 ```
 
 ### DOM 模板解析注意事项
