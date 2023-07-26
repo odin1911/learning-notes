@@ -1,5 +1,7 @@
 # uni-app 微信小程序
 
+<https://js.work/posts/d81086ba84e12>
+
 ## 使 vue-cli 命令行创建 uni-app
 
 ```
@@ -39,3 +41,5 @@ const buildOpts = isDev
       }
     };
 ```
+
+另外网上找到的[方案](https://github.com/dcloudio/uni-app/issues/3288)：换成低版本miniprogram-ci <= 1.0.24能正常使用
