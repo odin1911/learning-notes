@@ -120,3 +120,24 @@ export const numberUnitConver = (value) => {
 };
 
 ```
+
+## 扩展
+
+前5位小数为0时使用科学计数法显示，否则显示数字
+
+```js
+export function number2Exponential(
+  input: number,
+  fixDig: number = 7,
+  exDig: number = -5
+) {
+  const num = Number(input.toFixed(fixDig));
+  const m = num.toExponential().match(/\d(?:\.(\d*))?e([+-]\d+)/);
+  const digits = +m![2];
+  if (digits < exDig) {
+    return num.toExponential();
+  } else {
+    return num.toFixed(Math.max(0, (m![1] || '').length - +m![2]));
+  }
+}
+```
