@@ -1,5 +1,7 @@
 # npm 库
 
+万一要用呢
+
 ## NPM酷库
 
 根据 <https://segmentfault.com/u/liangxingchen> 整理的*NPM酷库*系列
@@ -148,9 +150,6 @@ react-markdown
 cytoscape | cytoscape-dagre
 ==功能==：Cytoscape.js是功能齐全的图论库。您是否需要对关系数据进行建模和/或可视化，例如生物数据或社交网络？如果是这样，Cytoscape.js就是您所需要的。Cytoscape.js包含一个图形理论模型和一个用于显示交互式图形的可选渲染器。该库旨在使程序员和科学家尽可能轻松地在其应用程序中使用图论，无论是用于Node.js应用程序中的服务器端分析还是用于丰富的用户界面。
 
-Lodash
-==功能==：函数工具类库
-
 patch-package node
 ==功能==：npm yran 补丁,用于改node_modules
 
@@ -259,3 +258,15 @@ better-scroll
 
 create-keyframe-animation
 ==功能==：使用JavaScrip在浏览器中动态生成CSS关键帧动画（不维护了）
+
+## 数学库 (没验证)
+
+可搜索`js javascirpt 数学库`
+
+[mathjs](https://github.com/josdejong/mathjs/)
+
+[numbers.js](https://github.com/numbers/numbers.js)
+
+[numeric](https://github.com/sloisel/numeric)
+
+[JavaScript数学库](https://sparxsystems.cn/enterprise_architect_user_guide/15.2/automation/javascript_math_library.html)
