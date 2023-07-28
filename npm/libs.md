@@ -270,3 +270,7 @@ create-keyframe-animation
 [numeric](https://github.com/sloisel/numeric)
 
 [JavaScript数学库](https://sparxsystems.cn/enterprise_architect_user_guide/15.2/automation/javascript_math_library.html)
+
+## react
+
+<https://www.npmjs.com/package/react-loader-spinner>
