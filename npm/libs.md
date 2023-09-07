@@ -114,8 +114,12 @@
 
 [来源](https://zhuanlan.zhihu.com/p/339737158)
 
-color
+[color](https://www.npmjs.com/package/color)
 ==功能==：JavaScript库，用于不可变的颜色转换和对CSS颜色字符串的支持。
+操作颜色，类似库：
+[polished](https://www.npmjs.com/package/polished)
+[colorjs.io](https://www.npmjs.com/package/colorjs.io)
+[tinycolor2](https://www.npmjs.com/package/tinycolor2)
 
 uuidjs
 ==功能==：UUID.js-JavaScript的RFC兼容UUID生成器
