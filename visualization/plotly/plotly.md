@@ -21,3 +21,10 @@
 [酷炫！可视化神器Plotly玩转散点图](https://mp.weixin.qq.com/s?__biz=Mzg3ODY2MDAyMQ==&mid=2247493044&idx=1&sn=5c47118f4e6a65157fb2eac6fd47ff70&source=41#wechat_redirect)
 
 [个人DEMO](https://github.com/odin1911/plotly-website)
+
+## 小技巧
+
+如何查看一个plotly图的配置，
+先找到plotly图的根节点，一般是个div,
+在这个div上可以取到layout和data，
+可以快速取得颜色等属性
