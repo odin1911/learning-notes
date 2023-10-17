@@ -1,5 +1,7 @@
 # hsts
 
+tags: https
+
 HTTP Strict Transport Security（通常简称为HSTS）
 
 相关 response header `Strict-Transport-Security: max-age=<expire-time>`，

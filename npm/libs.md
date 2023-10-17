@@ -278,3 +278,8 @@ create-keyframe-animation
 ## react
 
 <https://www.npmjs.com/package/react-loader-spinner>
+
+## figlet
+
+生成 FIGfont 符号字
+<https://www.npmjs.com/package/figlet>
