@@ -281,5 +281,5 @@ create-keyframe-animation
 
 ## figlet
 
-生成 FIGfont 符号字
+生成 FIGfont 符号字，由符号组成的文字
 <https://www.npmjs.com/package/figlet>
