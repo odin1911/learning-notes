@@ -13,9 +13,9 @@ jsdoc无需编译，对旧的js项目来说是个不错的补充。
 
 [一个blog](https://chengpeiquan.com/article/javascript-with-typescript-type-checking.html)
 
-<https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html>
+[ts 官网](https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html)
 
-<https://goulet.dev/posts/how-to-write-ts-interfaces-in-jsdoc/>
+[How to Write TypeScript Interfaces in JSDoc Comments](https://goulet.dev/posts/how-to-write-ts-interfaces-in-jsdoc/)
 
 ## questions
 
