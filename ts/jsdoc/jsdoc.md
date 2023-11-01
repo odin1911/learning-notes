@@ -17,6 +17,10 @@ jsdoc无需编译，对旧的js项目来说是个不错的补充。
 
 [How to Write TypeScript Interfaces in JSDoc Comments](https://goulet.dev/posts/how-to-write-ts-interfaces-in-jsdoc/)
 
+## 一份语法说明，也可以去看官网
+
+<https://keqingrong.cn/blog/2020-12-05-jsdoc-dawn-of-typed-javascript/>
+
 ## questions
 
 ### 解决 eslint 针对 jsdoc 类型变量 no-unused-vars 的报错
