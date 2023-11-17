@@ -283,3 +283,15 @@ create-keyframe-animation
 
 生成 FIGfont 符号字，由符号组成的文字
 <https://www.npmjs.com/package/figlet>
+
+## iconv-lite
+
+Convert character encodings in pure javascript.
+
+<https://www.npmjs.com/package/iconv-lite>
+
+## puppeteer
+
+无头浏览器 Headless Chrome
+
+<https://www.npmjs.com/package/puppeteer>
