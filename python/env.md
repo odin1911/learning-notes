@@ -53,3 +53,9 @@ pyenv 用于管理 python 版本，意见比较一致
 Anaconda 用于数据科学，优点是使用方便，会安装常用包，缺点是污染全局环境，体积大
 
 虚拟环境使用方式不统一，virtualenv、pyenv、venv、conda 都可以做到
+
+## 2023-11-29
+
+[pyenv使用](https://zhuanlan.zhihu.com/p/36402791)
+
+[使用 pyenv 管理 Python 版本](https://einverne.github.io/post/2017/04/pyenv.html)
