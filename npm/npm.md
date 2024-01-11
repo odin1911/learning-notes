@@ -2,7 +2,9 @@
 
 ## 常用包
 
-git-cz npm-why ntl rimraf yalc yarn yrm
+git-cz npm-why ntl rimraf yalc yarn yrm git-open
+
+npm install --global git-open
 
 ## nrm
 
