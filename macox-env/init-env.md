@@ -6,6 +6,8 @@
 
 ### 安装 Command Line Tools
 
+> 安装 brew 脚本会自动安装 Command Line Tools
+
 使用 `xcode-select --install` 安装失败， 提示 `不能安装该软件 因为当前无法从软件更新服务器获得`
 
 ### 离线安装 Command Line Tools
@@ -14,7 +16,7 @@
 
 Q：获取系统对应的 xcode 版本
 
-A：app store 里找到 xcode，在历史版本中找到可以安装的版本
+A：app store 里找到 xcode，在历史版本中找到支持当前系统的最后一个xcode版本
 
 ### 安装 Homebrew
 
@@ -54,3 +56,9 @@ sh -c "$(curl -fsSL https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install
 [oh my zsh 插件安装详细教程及常用插件](https://segmentfault.com/a/1190000039860436)
 
 > 环境变量名太普通了，安装完成后去掉环境变量，以防万一
+
+## vscode
+
+系统升级后，启动vscode提示
+`Git not found. Install it or configure it using the 'git.path' setting" on brand new, fresh, shiny, Git-less installations of VSCode`，
+安装`Command Line Tools`后解决
