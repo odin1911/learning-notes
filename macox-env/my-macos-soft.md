@@ -7,6 +7,7 @@ snipaste: 截图工具
 Manico: 应用快捷切换
 
 Alfred / Raycast : 应用快捷切换
+[Raycast折腾之路 - 掘金](https://juejin.cn/post/7279087330156625960)
 
 The Unarchive: 解压缩工具
 
