@@ -1,6 +1,6 @@
-# 升级react18记录
+# 升级 react18 记录
 
-## StrictMode 中会调2次 effect
+## StrictMode 中会调 2 次 effect
 
 [如何在 Effects 中支持可重用状态·reactwg/react-18·讨论 #18·GitHub --- How to support Reusable State in Effects · reactwg/react-18 · Discussion #18 · GitHub](https://github.com/reactwg/react-18/discussions/18)
 
@@ -13,7 +13,7 @@ const ref = useRef(null);
 useEffect(() => {
   // Initialize an imperative API inside of the same effect that destroys it.
   // This way it will be recreated if the component gets remounted.
-  const someImperativeThing = ref.current = new SomeImperativeThing();
+  const someImperativeThing = (ref.current = new SomeImperativeThing());
 
   return () => {
     someImperativeThing.destroy();
