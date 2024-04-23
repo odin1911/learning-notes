@@ -35,12 +35,14 @@ cross-origin-opener-policy: same-origin
 
 ## WebCodecs 方案
 
-Chrome 94开始支持，21 年 9 月份
+Chrome 94 开始支持，21 年 9 月份
 
 原生，速度快
 
-api很新，而且看介绍文章，对音频采样有要求
+api 很新，而且看介绍文章，对音频采样有要求
 
-[JS audio加图片序列或canvas转webM/MP4的实现 « 张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/wordpress/2023/05/mp4-video-api-webcodecs-webm/)
+[JS audio 加图片序列或 canvas 转 webM/MP4 的实现 « 张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/wordpress/2023/05/mp4-video-api-webcodecs-webm/)
 
 [音视频 Tag | 风痕 · 術&思](https://hughfenghen.github.io/tag/%E9%9F%B3%E8%A7%86%E9%A2%91/)
+
+[hughfenghen/WebAV: Process audio/video data in the browser using WebCodecs. 基于 WebCodecs 在浏览器中处理音视频数据。](https://github.com/hughfenghen/WebAV)
