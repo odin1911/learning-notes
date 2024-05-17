@@ -8,6 +8,8 @@
 
 [FFmpeg 视频处理入门教程 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2020/01/ffmpeg.html)
 
+[FFmpeg 实用命令 — FFmpeg 教程 文档](https://wklchris.github.io/blog/FFmpeg/FFmpeg.html#id10)
+
 ### 命令行参数
 
 ```sh
