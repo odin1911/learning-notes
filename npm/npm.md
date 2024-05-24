@@ -1,4 +1,4 @@
-# npm相关杂项
+# npm 相关杂项
 
 ## 常用包
 
@@ -8,6 +8,12 @@ npm install --global git-open
 
 ## nrm
 
-nrm ls 不带星（*）并且 nrm current 没有任何输出
+nrm ls 不带星（\*）并且 nrm current 没有任何输出
 
 > npm install Pana/nrm -g
+
+## 查看包为什么被安装
+
+```shell
+yarn why lodash
+```
