@@ -23,9 +23,11 @@ Overrides provide a way to replace a package in your dependency tree with anothe
 
 某个依赖版本不可用时，临时固定到旧版本
 
-## use in yarn
+## in yarn
 
 <https://classic.yarnpkg.com/lang/en/docs/selective-version-resolutions/>
+
+<https://blog.csdn.net/qq_28586119/article/details/129097762>
 
 ```json
 // package.json
