@@ -65,3 +65,9 @@ ffmpeg \
 -c:v copy -c:a aac -strict experimental \
 output.mp4
 ```
+
+## 字幕
+
+FFmpeg 不好处理字幕，要借助其他工具
+
+[Aegisub · 强大的音视频处理工具：FFmpeg](https://book.crifan.com/books/media_process_ffmpeg/website/subtitle/edit/aegisub.html)
