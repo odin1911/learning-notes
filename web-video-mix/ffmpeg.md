@@ -26,17 +26,7 @@ ffmpeg {1} {2} -i {3} {4} {5}
 4. 输出文件参数
 5. 输出文件
 
-### 查看文件信息
-
-```sh
-ffmpeg -i input.mp4
-
-ffmpeg -i input.mp4 -hide_banner // 只显示元信息
-```
-
-[FFmpeg 引言 — FFmpeg 教程 文档](https://wklchris.github.io/blog/FFmpeg/Intro.html)
-
-## 音视频合成
+## 配音服务合成音视频代码
 
 ```java
  val ffmpeg: ProcessWrapper = VideoEncoderFactory.fFMPEGLocator.createExecutor()
@@ -58,16 +48,12 @@ ffmpeg -i input.mp4 -hide_banner // 只显示元信息
         ffmpeg.addArgument(target.absolutePath)
 ```
 
-```sh
-ffmpeg \
--y
--i ca777ded.mp4 -i 20240421210258.aac \
--c:v copy -c:a aac -strict experimental \
-output.mp4
-```
-
 ## 字幕
 
 FFmpeg 不好处理字幕，要借助其他工具
 
 [Aegisub · 强大的音视频处理工具：FFmpeg](https://book.crifan.com/books/media_process_ffmpeg/website/subtitle/edit/aegisub.html)
+
+## FFmpeg 和 播放器
+
+[探索 FFmpeg：实现自定义播放速度的全方位指南 - 知乎](https://zhuanlan.zhihu.com/p/655318441)
