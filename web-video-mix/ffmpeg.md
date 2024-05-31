@@ -4,6 +4,8 @@
 
 [编译指南/macOS – FFmpeg --- CompilationGuide/macOS – FFmpeg](https://trac.ffmpeg.org/wiki/CompilationGuide/macOS)
 
+[通俗易懂的ffmpeg笔记- 文集 哔哩哔哩专栏](https://www.bilibili.com/read/readlist/rl191609?spm_id_from=333.999.0.0)
+
 ## 在线工具
 
 <https://ffmpeg-online.vercel.app/>
