@@ -4,7 +4,7 @@
 
 [编译指南/macOS – FFmpeg --- CompilationGuide/macOS – FFmpeg](https://trac.ffmpeg.org/wiki/CompilationGuide/macOS)
 
-[通俗易懂的ffmpeg笔记- 文集 哔哩哔哩专栏](https://www.bilibili.com/read/readlist/rl191609?spm_id_from=333.999.0.0)
+[通俗易懂的 ffmpeg 笔记- 文集 哔哩哔哩专栏](https://www.bilibili.com/read/readlist/rl191609?spm_id_from=333.999.0.0)
 
 ## 在线工具
 
@@ -59,3 +59,9 @@ FFmpeg 不好处理字幕，要借助其他工具
 ## FFmpeg 和 播放器
 
 [探索 FFmpeg：实现自定义播放速度的全方位指南 - 知乎](https://zhuanlan.zhihu.com/p/655318441)
+
+## mov to mp4
+
+[MOV 与 MP4 格式比较：不再有两种想法](https://video-converter.com/cn/blog/mov-vs-mp4)
+
+> 此网站有在线转换器

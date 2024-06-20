@@ -17,3 +17,13 @@ nrm ls 不带星（\*）并且 nrm current 没有任何输出
 ```shell
 yarn why lodash
 ```
+
+## store2 本地存储
+
+[store2 - npm](https://www.npmjs.com/package/store2)
+
+```js
+store.session.get(REFRESH_MARKER);
+store.session.set(REFRESH_MARKER, true);
+store.session.remove(REFRESH_MARKER);
+```
