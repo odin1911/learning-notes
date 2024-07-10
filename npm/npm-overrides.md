@@ -43,3 +43,5 @@ Overrides provide a way to replace a package in your dependency tree with anothe
 [字节的一个小问题npm 和 yarn不一样吗？](https://juejin.cn/post/7060844948316225572)
 
 [字节的一个小问题npm 和 yarn不一样吗？(续篇)](https://juejin.cn/post/7071659901654827039/)
+
+[yarn 使用 resolutions 解决版本依赖固化以及依赖的依赖版本不一致问题 - 掘金](https://juejin.cn/post/7205181884590276669)

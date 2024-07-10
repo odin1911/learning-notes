@@ -27,3 +27,8 @@ store.session.get(REFRESH_MARKER);
 store.session.set(REFRESH_MARKER, true);
 store.session.remove(REFRESH_MARKER);
 ```
+
+## refs
+
+[没想到你是这样的 npm install | Maoli](https://jackym06.github.io/2021/11/16/%E6%B2%A1%E6%83%B3%E5%88%B0%E4%BD%A0%E6%98%AF%E8%BF%99%E6%A0%B7%E7%9A%84npm%20install/)
+说明 npm lock 机制，缓存，
