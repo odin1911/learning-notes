@@ -52,3 +52,9 @@ curl -I https://192.168.31.170
 ```
 
 > 无警告，加上-v 参数输出还会告诉证书是可信的。
+
+## 报错 unable to verify the first certificate
+
+网上说是证书链不完整
+
+[OpenSSL：无法使用 OpenSSL 验证第一个证书 |帕沃尔·库塔杰 (Pavol Kutaj) |中等的 --- OpenSSL: Unable to Verify the First Certificate with OpenSSL | by Pavol Kutaj | Medium](https://pavolkutaj.medium.com/unable-to-verify-the-first-certificate-with-openssl-47eecb652a9b)

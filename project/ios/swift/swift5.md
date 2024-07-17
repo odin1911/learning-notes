@@ -619,6 +619,7 @@ range.contains(4)   // true
 range.contains(-1)  // true
 
 // 字符串
+
 let singleLineString = "These are the same." // 等价
 let multilineString = """
 These are the same.
@@ -656,4 +657,379 @@ Escaping all three quotes \"\"\"
 // 如果需要字符串文字中字符的特殊效果，请匹配转义字符（\）后面添加与起始位置个数相匹配的 # 符。 例如，如果您的字符串是 #"Line 1 \nLine 2"# 并且您想要换行，则可以使用 #"Line 1 \#nLine 2"# 来代替。 同样，###"Line1 \###nLine2"### 也可以实现换行效果。
 #"Line 1 \#nLine 2"# // 给文字换行
 ###"Line1 \###nLine2"### // 给文字换行
+
+// 通过检查 Bool 类型的 isEmpty 属性来判断该字符串是否为空
+var emptyString = ""
+if emptyString.isEmpty {
+    print("Nothing to see here")
+}
+// 打印输出：“Nothing to see here”
+
+// 通过 for-in 循环来遍历字符串
+for character in "Dog!🐶" {
+    print(character)
+}
+// D
+// o
+// g
+// !
+// 🐶
+
+// 用 append() 方法将一个字符附加到一个字符串变量的尾部
+let exclamationMark: Character = "!"
+welcome.append(exclamationMark)
+// welcome 现在等于 "hello there!"
+
+// 字符串插值
+let multiplier = 3
+let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
+// message 是 "3 times 2.5 is 7.5"
+// 要在使用扩展字符串分隔符的字符串中使用字符串插值
+print(#"6 times 7 is \#(6 * 7)."#)
+// 打印 "6 times 7 is 42."
+
+// 要获得一个字符串中 Character 值的数量，可以使用 count 属性
+let unusualMenagerie = "Koala 🐨, Snail 🐌, Penguin 🐧, Dromedary 🐪"
+print("unusualMenagerie has \(unusualMenagerie.count) characters")
+// 打印输出“unusualMenagerie has 40 characters”
+
+// 字符串索引
+let greeting = "Guten Tag!"
+greeting[greeting.startIndex]
+// G
+greeting[greeting.index(before: greeting.endIndex)]
+// !
+greeting[greeting.index(after: greeting.startIndex)]
+// u
+let index = greeting.index(greeting.startIndex, offsetBy: 7)
+greeting[index]
+// a
+
+// 使用 indices 属性会创建一个包含全部索引的范围（Range）
+for index in greeting.indices {
+   print("\(greeting[index]) ", terminator: "")
+}
+// 打印输出“G u t e n   T a g ! ”
+
+// 调用 insert(_:at:) 方法可以在一个字符串的指定索引插入一个字符，
+// 调用 insert(contentsOf:at:) 方法可以在一个字符串的指定索引插入一段字符串。
+var welcome = "hello"
+welcome.insert("!", at: welcome.endIndex)
+// welcome 变量现在等于 "hello!"
+
+welcome.insert(contentsOf:" there", at: welcome.index(before: welcome.endIndex))
+// welcome 变量现在等于 "hello there!"
+
+// 调用 remove(at:) 方法可以在一个字符串的指定索引删除一个字符，
+// 调用 removeSubrange(_:) 方法可以在一个字符串的指定索引删除一个子字符串。
+welcome.remove(at: welcome.index(before: welcome.endIndex))
+// welcome 现在等于 "hello there"
+let range = welcome.index(welcome.endIndex, offsetBy: -6)..<welcome.endIndex
+welcome.removeSubrange(range)
+// welcome 现在等于 "hello"
+
+// 字符串/字符相等
+let quotation = "We're a lot alike, you and I."
+let sameQuotation = "We're a lot alike, you and I."
+if quotation == sameQuotation {
+    print("These two strings are considered equal")
+}
+// 打印输出“These two strings are considered equal”
+
+// 前缀/后缀相等
+// 调用字符串的 hasPrefix(_:)/hasSuffix(_:) 方法来检查字符串是否拥有特定前缀/后缀，两个方法均接收一个 String 类型的参数，并返回一个布尔值
+var act1SceneCount = 0
+for scene in romeoAndJuliet {
+    if scene.hasPrefix("Act 1 ") {
+        act1SceneCount += 1
+    }
+}
+print("There are \(act1SceneCount) scenes in Act 1")
+// 打印输出“There are 5 scenes in Act 1”
+var mansionCount = 0
+var cellCount = 0
+for scene in romeoAndJuliet {
+    if scene.hasSuffix("Capulet's mansion") {
+        mansionCount += 1
+    } else if scene.hasSuffix("Friar Lawrence's cell") {
+        cellCount += 1
+    }
+}
+print("\(mansionCount) mansion scenes; \(cellCount) cell scenes")
+// 打印输出“6 mansion scenes; 2 cell scenes”
+
+// 字符串的 Unicode 表示形式
+// UTF-8 表示
+for codeUnit in dogString.utf8 {
+    print("\(codeUnit) ", terminator: "")
+}
+print("")
+// 68 111 103 226 128 188 240 159 144 182
+// UTF-16 表示
+for codeUnit in dogString.utf16 {
+    print("\(codeUnit) ", terminator: "")
+}
+print("")
+// 68 111 103 8252 55357 56374
+// Unicode 标量表示
+for scalar in dogString.unicodeScalars {
+    print("\(scalar.value) ", terminator: "")
+}
+print("")
+// 68 111 103 8252 128054
+
+// 集合
+// 数组（Array）、集合（Set）和字典（Dictionary）
+
+// 数组（Array）
+var someInts: [Int] = []
+print("someInts is of type [Int] with \(someInts.count) items.")
+// 打印“someInts is of type [Int] with 0 items.”
+var threeDoubles = Array(repeating: 0.0, count: 3)
+// threeDoubles 是一种 [Double] 数组，等价于 [0.0, 0.0, 0.0]
+
+// 组合两个已存在的相同类型数组
+var anotherThreeDoubles = Array(repeating: 2.5, count: 3)
+// anotherThreeDoubles 被推断为 [Double]，等价于 [2.5, 2.5, 2.5]
+var sixDoubles = threeDoubles + anotherThreeDoubles
+// sixDoubles 被推断为 [Double]，等价于 [0.0, 0.0, 0.0, 2.5, 2.5, 2.5]
+
+var shoppingList: [String] = ["Eggs", "Milk"]
+// shoppingList 已经被构造并且拥有两个初始项。
+
+// 使用 enumerated() 方法来进行数组遍历
+for (index, value) in shoppingList.enumerated() {
+    print("Item \(String(index + 1)): \(value)")
+}
+// Item 1: Six eggs
+// Item 2: Milk
+// Item 3: Flour
+// Item 4: Baking Powder
+// Item 5: Bananas
+
+// 集合（Set）
+var letters = Set<Character>()
+print("letters is of type Set<Character> with \(letters.count) items.")
+// 打印“letters is of type Set<Character> with 0 items.”
+letters.insert("a")
+// letters 现在含有1个 Character 类型的值
+letters = []
+// letters 现在是一个空的 Set，但是它依然是 Set<Character> 类型
+var favoriteGenres: Set<String> = ["Rock", "Classical", "Hip hop"]
+// favoriteGenres 被构造成含有三个初始值的集合
+var favoriteGenres: Set = ["Rock", "Classical", "Hip hop"]
+print("I have \(favoriteGenres.count) favorite music genres.")
+// 打印“I have 3 favorite music genres.”
+if favoriteGenres.isEmpty {
+    print("As far as music goes, I'm not picky.")
+} else {
+    print("I have particular music preferences.")
+}
+// 打印“I have particular music preferences.”
+favoriteGenres.insert("Jazz")
+// favoriteGenres 现在包含4个元素
+if let removedGenre = favoriteGenres.remove("Rock") {
+    print("\(removedGenre)? I'm over it.")
+} else {
+    print("I never much cared for that.")
+}
+// 打印“Rock? I'm over it.”
+if favoriteGenres.contains("Funk") {
+    print("I get up on the good foot.")
+} else {
+    print("It's too funky in here.")
+}
+// 打印“It's too funky in here.”
+if favoriteGenres.contains("Funk") {
+    print("I get up on the good foot.")
+} else {
+    print("It's too funky in here.")
+}
+// 打印“It's too funky in here.”
+for genre in favoriteGenres.sorted() {
+    print("\(genre)")
+}
+// Classical
+// Hip hop
+// Jazz
+
+let oddDigits: Set = [1, 3, 5, 7, 9]
+let evenDigits: Set = [0, 2, 4, 6, 8]
+let singleDigitPrimeNumbers: Set = [2, 3, 5, 7]
+
+oddDigits.union(evenDigits).sorted()
+// [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+oddDigits.intersection(evenDigits).sorted()
+// []
+oddDigits.subtracting(singleDigitPrimeNumbers).sorted()
+// [1, 9]
+oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted()
+// [1, 2, 9]
+
+let houseAnimals: Set = ["🐶", "🐱"]
+let farmAnimals: Set = ["🐮", "🐔", "🐑", "🐶", "🐱"]
+let cityAnimals: Set = ["🐦", "🐭"]
+
+houseAnimals.isSubset(of: farmAnimals)
+// true
+farmAnimals.isSuperset(of: houseAnimals)
+// true
+farmAnimals.isDisjoint(with: cityAnimals)
+// true
+
+// 字典（Dictionary）
+var namesOfIntegers: [Int: String] = [:]
+// namesOfIntegers 是一个空的 [Int: String] 字典
+namesOfIntegers[16] = "sixteen"
+// namesOfIntegers 现在包含一个键值对
+namesOfIntegers = [:]
+// namesOfIntegers 又成为了一个 [Int: String] 类型的空字典
+var airports: [String: String] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+
+print("The dictionary of airports contains \(airports.count) items.")
+// 打印“The dictionary of airports contains 2 items.”（这个字典有两个数据项）
+if airports.isEmpty {
+    print("The airports dictionary is empty.")
+} else {
+    print("The airports dictionary is not empty.")
+}
+// 打印“The airports dictionary is not empty.”
+airports["LHR"] = "London"
+// airports 字典现在有三个数据项
+
+if let oldValue = airports.updateValue("Dublin Airport", forKey: "DUB") {
+    print("The old value for DUB was \(oldValue).")
+}
+// 输出“The old value for DUB was Dublin.”
+
+airports["APL"] = "Apple Internation"
+// “Apple Internation”不是真的 APL 机场，删除它
+airports["APL"] = nil
+// APL 现在被移除了
+if let removedValue = airports.removeValue(forKey: "DUB") {
+    print("The removed airport's name is \(removedValue).")
+} else {
+    print("The airports dictionary does not contain a value for DUB.")
+}
+// 打印“The removed airport's name is Dublin Airport.”
+
+for (airportCode, airportName) in airports {
+    print("\(airportCode): \(airportName)")
+}
+// YYZ: Toronto Pearson
+// LHR: London Heathrow
+for airportCode in airports.keys {
+    print("Airport code: \(airportCode)")
+}
+// Airport code: YYZ
+// Airport code: LHR
+
+for airportName in airports.values {
+    print("Airport name: \(airportName)")
+}
+// Airport name: Toronto Pearson
+// Airport name: London Heathrow
+let airportCodes = [String](airports.keys)
+// airportCodes 是 ["YYZ", "LHR"]
+let airportNames = [String](airports.values)
+// airportNames 是 ["Toronto Pearson", "London Heathrow"]
+
+// 使用 stride(from:to:by:) 函数跳过不需要的标记
+let minuteInterval = 5
+for tickMark in stride(from: 0, to: minutes, by: minuteInterval) {
+    // 每5分钟渲染一个刻度线（0, 5, 10, 15 ... 45, 50, 55）
+}
+// 在闭区间使用 stride(from:through:by:) 起到同样作用
+let hours = 12
+let hourInterval = 3
+for tickMark in stride(from: 3, through: hours, by: hourInterval) {
+    // 每3小时渲染一个刻度线（3, 6, 9, 12）
+}
+
+// while
+while condition {
+	statements
+}
+
+// repeat-while
+repeat {
+	statements
+} while condition
+
+// switch不存在隐式的贯穿
+// 为了让单个 case 同时匹配 a 和 A，可以将这个两个值组合成一个复合匹配，并且用逗号分开
+let anotherCharacter: Character = "a"
+switch anotherCharacter {
+case "a", "A":
+    print("The letter A")
+default:
+    print("Not the letter A")
+}
+// 输出“The letter A”
+
+// 使用 where 语句来判断额外的条件
+let yetAnotherPoint = (1, -1)
+switch yetAnotherPoint {
+case let (x, y) where x == y:
+    print("(\(x), \(y)) is on the line x == y")
+case let (x, y) where x == -y:
+    print("(\(x), \(y)) is on the line x == -y")
+case let (x, y):
+    print("(\(x), \(y)) is just some arbitrary point")
+}
+// 输出“(1, -1) is on the line x == -y”
+
+// fallthrough
+let integerToDescribe = 5
+var description = "The number \(integerToDescribe) is"
+switch integerToDescribe {
+case 2, 3, 5, 7, 11, 13, 17, 19:
+    description += " a prime number, and also"
+    fallthrough
+default:
+    description += " an integer."
+}
+print(description)
+// 输出“The number 5 is a prime number, and also an integer.”
+
+// guard
+func greet(person: [String: String]) {
+    guard let name = person["name"] else {
+        return
+    }
+
+    print("Hello \(name)!")
+
+    guard let location = person["location"] else {
+        print("I hope the weather is nice near you.")
+        return
+    }
+
+    print("I hope the weather is nice in \(location).")
+}
+
+greet(person: ["name": "John"])
+// 输出“Hello John!”
+// 输出“I hope the weather is nice near you.”
+greet(person: ["name": "Jane", "location": "Cupertino"])
+// 输出“Hello Jane!”
+// 输出“I hope the weather is nice in Cupertino.”
+
+// 检测 API 可用性
+if #available(iOS 10, macOS 10.12, *) {
+    // 在 iOS 使用 iOS 10 的 API, 在 macOS 使用 macOS 10.12 的 API
+} else {
+    // 使用先前版本的 iOS 和 macOS 的 API
+}
+
+// 自动闭包
+@autoclosure
+// 逃逸闭包
+@escaping
+
+// 相同（===） 不相同（!==） 使用这两个运算符检测两个常量或者变量是否引用了同一个实例
+if tenEighty === alsoTenEighty {
+    print("tenEighty and alsoTenEighty refer to the same VideoMode instance.")
+}
+// 打印 "tenEighty and alsoTenEighty refer to the same VideoMode instance."
 ```
