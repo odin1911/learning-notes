@@ -20,6 +20,12 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
+## 启动 ssh-agent
+
+```sh
+eval "$(ssh-agent -s)"
+```
+
 ## 加入 ssh-agent
 
 ```sh
