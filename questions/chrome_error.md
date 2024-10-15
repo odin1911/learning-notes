@@ -33,3 +33,8 @@ ERR_SSL_PROTOCOL_ERROR
 if toggling chrome://flags/#use-sha1-server-handshakes to "Enabled" (instead of "Default" or "Disabled") makes the issue go away, that is likely the cause.
 
 此方法123版本后将失效
+
+
+## 解决方案
+
+[简析Chrome ERR_SSL_PROTOCOL_ERROR 协议错误 | NoPanic](https://www.ilikejobs.com/posts/what-is-chrome-going-on/)
