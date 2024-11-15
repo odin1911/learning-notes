@@ -43,3 +43,7 @@ ssh-add -l
 ```sh
 ssh -T git@github.com
 ```
+
+## SSH 在远程执行命令
+
+[系统运维|通过 SSH 在远程 Linux 系统上执行命令](https://linux.cn/article-15263-1.html)
