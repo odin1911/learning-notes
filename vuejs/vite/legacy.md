@@ -1,4 +1,4 @@
-# 适配传统浏览器
+# vite适配传统浏览器
 
 @vitejs/plugin-legacy
 
