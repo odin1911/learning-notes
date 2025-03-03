@@ -12,3 +12,11 @@
 [Optional中的Map和FlatMap · Swift知识学习](https://leon_lizi.gitbooks.io/swift-/content/chapter2.html)
 [Swift 函数式编程：从 map、flatMap 和 compactMap 开始在 Swift 标准库里提供了 ma - 掘金](https://juejin.cn/post/6844904167824162824#heading-7)
 [Swift 烧脑体操（四） - map 和 flatMap · 唐巧的博客](https://blog.devtang.com/2016/03/05/swift-gym-4-map-and-flatmap/)
+
+## OC调用Swift
+
+[Swift 与 OC相互调用1、创建桥接文件 在创建另一种语言的文件时XCode会提示创建项目名-Bridging-He - 掘金](https://juejin.cn/post/7136961571313418271)
+
+## SwiftyJSON
+
+[SwiftyJSON解读(4.0.0) | Cyrill](https://cyrill.win/articles/2017/12/13/swiftyjson-read)
