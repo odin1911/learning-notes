@@ -17,6 +17,9 @@
 
 [Swift 与 OC相互调用1、创建桥接文件 在创建另一种语言的文件时XCode会提示创建项目名-Bridging-He - 掘金](https://juejin.cn/post/7136961571313418271)
 
+必须继承于 NSObject，类、结构体等才会公开给OC
+必须使用 @objc 修饰，属性、方法等才会公开给OC
+
 ## SwiftyJSON
 
 [SwiftyJSON解读(4.0.0) | Cyrill](https://cyrill.win/articles/2017/12/13/swiftyjson-read)
