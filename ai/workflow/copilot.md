@@ -11,6 +11,9 @@ Codeium/Windsurf
 目前用免费方案，具体情况看一下
 
 Cursor
-没用过
+没去用
 
 trae
+现在免费
+
+[所有人 AI --- All Hands AI](https://www.all-hands.dev/)
