@@ -1,6 +1,32 @@
 # macos 安装 python 开发环境
 
-2021-12-23
+## 2025-04-26
+
+UV和Pixi代表了Python环境管理工具的两种不同技术路线。UV专注于提供高性能的原生PyPI包管理解决方案，而Pixi则致力于桥接Conda生态系统和PyPI。选择时应考虑项目具体需求：
+
+对性能要求高的项目建议选择UV
+需要Conda生态系统支持的项目可考虑Pixi
+标准Python项目开发推荐使用UV
+
+## 2023-11-29
+
+[pyenv 使用](https://zhuanlan.zhihu.com/p/36402791)
+
+[使用 pyenv 管理 Python 版本](https://einverne.github.io/post/2017/04/pyenv.html)
+
+## 2021-12-29
+
+目前网上的信息来看，python 环境说法不统一，大概总结一下
+
+pyenv 用于管理 python 版本，意见比较一致
+
+每个项目使用自己的虚拟环境，意见比较一致
+
+Anaconda 用于数据科学，优点是使用方便，会安装常用包，缺点是污染全局环境，体积大
+
+虚拟环境使用方式不统一，virtualenv、pyenv、venv、conda 都可以做到
+
+## 2021-12-23
 
 ## ref
 
@@ -41,21 +67,3 @@ pyenv local venv37
 ## Python Package Management
 
 pip-tools、Pipenv、Poetry、conda-lock
-
-## 2021-12-29
-
-目前网上的信息来看，python 环境说法不统一，大概总结一下
-
-pyenv 用于管理 python 版本，意见比较一致
-
-每个项目使用自己的虚拟环境，意见比较一致
-
-Anaconda 用于数据科学，优点是使用方便，会安装常用包，缺点是污染全局环境，体积大
-
-虚拟环境使用方式不统一，virtualenv、pyenv、venv、conda 都可以做到
-
-## 2023-11-29
-
-[pyenv使用](https://zhuanlan.zhihu.com/p/36402791)
-
-[使用 pyenv 管理 Python 版本](https://einverne.github.io/post/2017/04/pyenv.html)
