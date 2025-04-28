@@ -8,6 +8,10 @@ UV和Pixi代表了Python环境管理工具的两种不同技术路线。UV专注
 需要Conda生态系统支持的项目可考虑Pixi
 标准Python项目开发推荐使用UV
 
+### uv
+
+[使用 uv 管理 Python 環境 - DEV Community](https://dev.to/codemee/shi-yong-uv-guan-li-python-huan-jing-53hg)
+
 ## 2023-11-29
 
 [pyenv 使用](https://zhuanlan.zhihu.com/p/36402791)
