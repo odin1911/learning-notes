@@ -17,3 +17,5 @@ trae
 现在免费
 
 [所有人 AI --- All Hands AI](https://www.all-hands.dev/)
+
+Traycer 对开源项目免费，用插件要付费？
