@@ -6,6 +6,39 @@
 
 [UV：Python生态的下一代包管理革命 - YetAnotherSpace](https://hinnuryuu.cc/index.php/archives/53/)
 
+## 项目实践
+
+```sh
+# 安装uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# 查看可用python
+uv python list
+
+# 安装最新python
+uv python install
+# 安装指定版本
+# uv python install 3.10.10
+
+# 预设python版本，会创建 .python-version 文件。删除文件可还原
+uv python pin 3.10
+
+# 可以用单一文件方式，会把环境写入文件头部
+# uv add --script cow3.py cowsay rich
+
+# 用目录方式，会创建 pyproject.toml .python-version 等
+uv init test_uv
+
+# 执行，会创建 .venv 目录，安装依赖。创建 uv.lock 文件
+uv run main.py
+
+# 安装依赖
+uv add cowsay rich
+# 移除依赖
+uv remove cowsay
+
+```
+
 ## 安装
 
 根据官网方法安装，配置代码提示。
