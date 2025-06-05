@@ -149,6 +149,9 @@ uv sync
 
 # 查看目前安裝的套件
 uv pip list
+
+# 可以安装 pyenv 来自动切换python版本
+# https://github.com/pyenv/pyenv
 ```
 
 使用套件提供的工具指令
